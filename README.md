@@ -1,13 +1,32 @@
-# Hệ mã RSA - cài đặt từ đầu bằng Python
+# Hệ mã RSA – Cài đặt bằng Python
 
-Cài đặt hoàn chỉnh hệ mã RSA cùng các thuật toán nền (Euclid mở rộng, nghịch đảo modulo,
-bình phương và nhân, Miller-Rabin), **không dùng thư viện mật mã có sẵn cho phần lõi**.
-Phiên bản thu nhỏ in từng bước theo **đúng ký hiệu và dạng bảng của bài giảng Chương 3**
-(bảng Euclid mở rộng 10 cột, bảng nghịch đảo r0 r1 r2 q t0 t1, bảng bình phương và nhân i b_i c f,
-Miller-Rabin với n - 1 = 2^k * q, KU = {e, n}, KR = {d, p, q}), chạy lại đúng mọi BTVD trong slide
-và toàn bộ Bài tập luyện tập Chương 3 (17 ý, khớp 17/17 đáp án gợi ý của giảng viên).
-Chỉ cần Python 3.8 trở lên, không cần cài thêm gói nào để chạy chương trình.
-Hai gói `cryptography` và `sympy` là tùy chọn, chỉ dùng trong `tests/` để đối chiếu kết quả.
+Đây là project nhóm em thực hiện cho bài tập lớn môn Mật mã học. Project tập trung vào việc tìm hiểu và cài đặt hệ mã RSA bằng Python.
+
+Các thuật toán chính được cài đặt gồm:
+- Euclid và Euclid mở rộng
+- Nghịch đảo modulo
+- Bình phương và nhân
+- Miller–Rabin
+- Sinh khóa RSA
+- Mã hóa và giải mã
+- Chữ ký số và kiểm tra chữ ký
+
+Ngoài phần RSA đầy đủ, chương trình có phiên bản RSA thu nhỏ để kiểm tra các ví dụ trong bài giảng. Nhóm cũng thực hiện kiểm thử với các bài tập Chương 3 và kết quả hiện tại là **17/17 bài khớp đáp án**.
+
+Project không sử dụng thư viện mật mã có sẵn cho phần thuật toán chính. Các thư viện bên ngoài (nếu có) chỉ được sử dụng để đối chiếu kết quả trong quá trình kiểm thử.
+
+## Yêu cầu
+
+- Python 3.8 trở lên
+- Không cần cài thêm thư viện để chạy phần chính của chương trình
+
+## Chạy chương trình
+
+```bash
+python cli.py
+```
+
+Sau khi chạy, chương trình sẽ hiển thị menu để lựa chọn các chức năng như chạy RSA thu nhỏ, sinh khóa RSA, mã hóa/giải mã văn bản, xử lý file, kiểm thử và đo thời gian chạy.
 
 ## 1. Cấu trúc mã nguồn
 
