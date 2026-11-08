@@ -148,16 +148,4 @@ theo kích thước 1 KB / 10 KB / 100 KB và so tốc độ `mod_pow` tự cài
 3. Chung modulus: hai bản mã của cùng M với e1, e2 -> Euclid mở rộng khôi phục M không cần d.
 4. Tính nhân (malleability): C' = C * r^e mod n giải mã ra r * M.
 
-## 8. Kịch bản demo 5-7 phút
 
-1. (2 phút) `python cli.py toy --preset lop`: chỉ vào từng bước Miller-Rabin, bảng nghịch đảo tìm d = 23,
-   bảng bình phương và nhân ra C = 11 rồi M = 88, phần CRT khớp slide 44. Nếu còn thời gian:
-   `python cli.py slide --name modpow` (bảng 7^560 mod 561 giống hệt slide 24).
-2. (1.5 phút) Menu 2 -> sinh khóa 2048 bit; menu 5 -> nhập một câu tiếng Việt, xem bản mã hex, giải mã lại đúng.
-3. (1 phút) Menu 7 -> `data/sample.png`: bản mã khác hẳn, giải mã ra `out/sample.dec.png` giống hệt từng byte
-   (mở ảnh lên cho lớp xem).
-4. (1 phút) Menu 8 -> bộ kiểm thử: 53 ca, các dòng `[ĐỐI CHIẾU]` với Wycheproof và OpenSSL.
-5. (1 phút) Menu 10 -> tấn công (hoặc menu 9 -> đo thời gian) tùy thời gian còn lại.
-
-Video dự phòng: chạy các lệnh con ở mục 2 và quay màn hình; `--save` lưu sẵn toàn bộ bước của
-phiên bản thu nhỏ ra tệp văn bản để chiếu nếu máy lỗi.
