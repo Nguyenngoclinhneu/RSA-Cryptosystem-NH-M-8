@@ -1,0 +1,2 @@
+cryptography>=41   # tuy chon: doi chieu voi OpenSSL trong tests/
+sympy>=1.12        # tuy chon: doi chieu isprime trong tests/
